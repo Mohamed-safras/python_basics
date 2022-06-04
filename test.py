@@ -1,6 +1,7 @@
 # 1
 
 from os import name
+from unique_name import unique, a
 
 # print("Hello World")
 
@@ -154,3 +155,53 @@ print(type(values))
 
 for val in values:
     print(val)
+
+new__values = [1, 2, 3, 4, 5, 6, 7, 5, 23]
+
+print(new__values[2::])
+
+no3 = [1, 34, 45, ]
+
+new__values.append(no3)
+print(new__values.pop())
+new__values.clear()
+new__values.append(1)
+new__values.append(2)
+print(new__values)
+new__values.reverse()
+new__values.sort()
+print(new__values.__contains__(1))
+print(new__values)
+#
+# print(n.)
+squares = [1, 4, 9, 16, 25]
+print(squares[-3:])
+
+squares[-3:] = [10, 30]
+print(squares)
+squares += [1, 3, 4]
+print(squares)
+
+my_name = "Safras"
+mine = "Afros"
+
+print(my__name < mine)
+print(my__name == mine)
+
+print(my__name.capitalize(), mine.capitalize())
+
+no4 = 30 if my_name > mine else 20
+print(no4)
+
+print("s" in my__name)
+
+print(40 if 10 > 10 else 50)
+
+print(10 > 100 > 1000 > 8)
+
+names = ["mohamed", "afros", "safras", "safras", "afros", "Ishalina"]
+
+print(10 >> 2)
+print(10 << 2)
+
+print(unique(names))
